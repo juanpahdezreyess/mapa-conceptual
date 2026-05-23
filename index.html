@@ -6,28 +6,34 @@
 <title>Mapa Conceptual - Justicia Social</title>
 
 <style>
-    body{
+
+    *{
         margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:white;
+        color:#111827;
         padding:40px 20px;
-        background:#0f172a;
-        font-family:Arial, sans-serif;
-        color:white;
     }
 
     .container{
-        max-width:1200px;
+        max-width:1400px;
         margin:auto;
     }
 
     .header{
         text-align:center;
-        margin-bottom:40px;
+        margin-bottom:50px;
     }
 
     .header h1{
-        color:#38bdf8;
-        font-size:40px;
-        margin-bottom:15px;
+        color:#1d4ed8;
+        font-size:42px;
+        margin-bottom:20px;
     }
 
     .info{
@@ -36,57 +42,101 @@
     }
 
     .map{
-        margin-top:40px;
-        background:#1e293b;
-        border-radius:20px;
-        padding:40px;
-        box-shadow:0 0 25px rgba(0,0,0,0.4);
-        overflow-x:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:35px;
     }
 
-    pre{
-        margin:0;
-        color:#f8fafc;
-        font-size:18px;
-        line-height:2;
-        white-space:pre-wrap;
-        word-wrap:break-word;
+    .row{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:25px;
+        width:100%;
     }
 
-    .title{
-        color:#facc15;
-        font-size:28px;
-        margin-bottom:30px;
+    .box{
+        background:#f8fafc;
+        border:2px solid #cbd5e1;
+        border-radius:16px;
+        padding:20px;
+        width:280px;
         text-align:center;
+        box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        transition:0.3s;
+    }
+
+    .box:hover{
+        transform:translateY(-4px);
+    }
+
+    .main{
+        background:#dbeafe;
+        border:3px solid #2563eb;
+        font-size:28px;
+        font-weight:bold;
+        width:420px;
+    }
+
+    .section-title{
+        font-size:24px;
+        color:#1d4ed8;
+        font-weight:bold;
+        margin-bottom:10px;
+        text-align:center;
+    }
+
+    .box h3{
+        color:#1d4ed8;
+        margin-bottom:12px;
+        font-size:20px;
+    }
+
+    .box p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .arrow{
+        font-size:42px;
+        color:#2563eb;
         font-weight:bold;
     }
 
-    .references{
-        margin-top:40px;
-        background:#1e293b;
-        padding:25px;
-        border-radius:20px;
+    .reference{
+        margin-top:70px;
+        background:#f8fafc;
+        border:2px solid #cbd5e1;
+        border-radius:16px;
+        padding:30px;
     }
 
-    .references h2{
-        color:#38bdf8;
+    .reference h2{
+        color:#1d4ed8;
         margin-bottom:15px;
     }
 
-    .references p{
+    .reference p{
         line-height:1.8;
-        font-size:17px;
+        font-size:16px;
     }
 
     @media(max-width:768px){
-        pre{
-            font-size:15px;
+
+        .main{
+            width:100%;
+        }
+
+        .box{
+            width:100%;
         }
 
         .header h1{
-            font-size:30px;
+            font-size:32px;
         }
     }
+
 </style>
 </head>
 
@@ -106,65 +156,201 @@
 
     <div class="map">
 
-        <div class="title">
-            Igualdad y libertad como fundamentos de la justicia social
+        <!-- NODO PRINCIPAL -->
+        <div class="box main">
+            JUSTICIA SOCIAL
         </div>
 
-<pre>
-JUSTICIA SOCIAL
-│
-├── IGUALDAD ──────────────────┐
-├── LIBERTAD ──────────────────┘
-│   (principios fundamentales interrelacionados)
-│
-├── TIPOS DE JUSTICIA
-│   ├── SOLIDARIDAD (basada en necesidades)
-│   ├── DERECHOS HUMANOS / IGUALDAD JURÍDICA
-│   └── MÉRITOS (basado en contribuciones o incentivos)
-│
-├── DIMENSIONES DE LA JUSTICIA SOCIAL
-│   ├── REDISTRIBUCIÓN
-│   ├── RECONOCIMIENTO
-│   └── REPRESENTACIÓN (o participación)
-│
-├── ENFOQUES TEÓRICOS
-│   ├── JOHN RAWLS
-│   │    → igualdad de bienes primarios
-│   │    → enfoque procedimental
-│   │    → instituciones justas
-│   │
-│   └── AMARTYA SEN
-│        → igualdad de capacidades
-│        → enfoque sustantivo
-│        → libertades reales de las personas
-│
-├── PROBLEMAS ACTUALES
-│   ├── Desigualdad socioeconómica creciente
-│   ├── Crisis económica y políticas de austeridad
-│   ├── Retroceso de derechos sociolaborales
-│   ├── Falta de regulación de los mercados financieros
-│   └── Déficit democrático y baja participación ciudadana
-│
-└── PROPUESTA DEL AUTOR
-    └── REFORMISMO FUERTE
-         → Fortalecer la igualdad y la libertad real
-           de las mayorías sociales
-         → Para lograr una sociedad más justa
-</pre>
+        <div class="arrow">↓</div>
+
+        <!-- FUNDAMENTOS -->
+        <div class="section-title">
+            Principios fundamentales
+        </div>
+
+        <div class="row">
+
+            <div class="box">
+                <h3>IGUALDAD</h3>
+                <p>
+                    Base esencial de la justicia social.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>LIBERTAD</h3>
+                <p>
+                    Principio interrelacionado con la igualdad.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <!-- TIPOS -->
+        <div class="section-title">
+            Tipos de justicia
+        </div>
+
+        <div class="row">
+
+            <div class="box">
+                <h3>SOLIDARIDAD</h3>
+                <p>
+                    Basada en necesidades sociales.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>DERECHOS HUMANOS</h3>
+                <p>
+                    Igualdad jurídica y respeto de derechos.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>MÉRITOS</h3>
+                <p>
+                    Basado en contribuciones o incentivos.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <!-- DIMENSIONES -->
+        <div class="section-title">
+            Dimensiones de la justicia social
+        </div>
+
+        <div class="row">
+
+            <div class="box">
+                <h3>REDISTRIBUCIÓN</h3>
+            </div>
+
+            <div class="box">
+                <h3>RECONOCIMIENTO</h3>
+            </div>
+
+            <div class="box">
+                <h3>REPRESENTACIÓN</h3>
+                <p>
+                    Participación ciudadana.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <!-- ENFOQUES -->
+        <div class="section-title">
+            Enfoques teóricos
+        </div>
+
+        <div class="row">
+
+            <div class="box">
+                <h3>JOHN RAWLS</h3>
+
+                <p>
+                    • Igualdad de bienes primarios <br><br>
+                    • Enfoque procedimental <br><br>
+                    • Instituciones justas
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>AMARTYA SEN</h3>
+
+                <p>
+                    • Igualdad de capacidades <br><br>
+                    • Enfoque sustantivo <br><br>
+                    • Libertades reales de las personas
+                </p>
+            </div>
+
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <!-- PROBLEMAS -->
+        <div class="section-title">
+            Problemas actuales
+        </div>
+
+        <div class="row">
+
+            <div class="box">
+                <p>Desigualdad socioeconómica creciente</p>
+            </div>
+
+            <div class="box">
+                <p>Crisis económica y políticas de austeridad</p>
+            </div>
+
+            <div class="box">
+                <p>Retroceso de derechos sociolaborales</p>
+            </div>
+
+            <div class="box">
+                <p>Falta de regulación de mercados financieros</p>
+            </div>
+
+            <div class="box">
+                <p>Déficit democrático y baja participación ciudadana</p>
+            </div>
+
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <!-- PROPUESTA -->
+        <div class="section-title">
+            Propuesta del autor
+        </div>
+
+        <div class="row">
+
+            <div class="box main">
+
+                <h3>REFORMISMO FUERTE</h3>
+
+                <p style="margin-top:15px;">
+                    Fortalecer la igualdad y la libertad real
+                    de las mayorías sociales para lograr
+                    una sociedad más justa.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="references">
+    <!-- REFERENCIAS -->
+
+    <div class="reference">
+
         <h2>Referencias</h2>
 
         <p>
-            • Antón Morón, A. (2013). Igualdad y libertad: fundamentos de la justicia social.
-            <i>Revista Internacional de Educación para la Justicia Social</i>, 2(1), 173-194.
+            • Antón Morón, A. (2013). Igualdad y libertad:
+            fundamentos de la justicia social.
+            Revista Internacional de Educación para la Justicia Social,
+            2(1), 173-194.
         </p>
 
+        <br>
+
         <p>
-            • Uso de inteligencia artificial como apoyo para organizar ideas y estructurar el mapa conceptual.
+            • Uso de inteligencia artificial como apoyo para organizar ideas
+            y estructurar el mapa conceptual.
         </p>
+
     </div>
 
 </div>
