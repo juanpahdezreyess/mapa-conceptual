@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa Conceptual - Justicia Social</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .header{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .header h1{
+      font-size: 38px;
+      margin-bottom: 10px;
+      color:#38bdf8;
+    }
+
+    .info{
+      font-size:18px;
+      line-height:1.8;
+    }
+
+    .map{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:50px;
+      position:relative;
+    }
+
+    .level{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:25px;
+      width:100%;
+      position:relative;
+    }
+
+    .node{
+      background:#1e40af;
+      padding:18px 22px;
+      border-radius:18px;
+      min-width:220px;
+      text-align:center;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+      transition:0.3s;
+      border:2px solid rgba(255,255,255,0.15);
+    }
+
+    .node:hover{
+      transform:translateY(-5px) scale(1.03);
+      background:#2563eb;
+    }
+
+    .main{
+      background:#0ea5e9;
+      font-size:28px;
+      font-weight:bold;
+      padding:25px 40px;
+    }
+
+    .subtitle{
+      width:100%;
+      text-align:center;
+      margin-bottom:10px;
+      font-size:20px;
+      color:#facc15;
+      font-weight:bold;
+    }
+
+    .arrow{
+      font-size:40px;
+      color:#38bdf8;
+    }
+
+    .small{
+      font-size:15px;
+      margin-top:8px;
+      color:#dbeafe;
+    }
+
+    .reference{
+      margin-top:70px;
+      background:rgba(255,255,255,0.08);
+      padding:25px;
+      border-radius:18px;
+      line-height:1.8;
+    }
+
+    .reference h2{
+      color:#facc15;
+      margin-bottom:15px;
+    }
+
+    @media(max-width:900px){
+      .node{
+        width:100%;
+      }
+
+      .main{
+        font-size:24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Mapa Conceptual</h1>
+
+    <div class="info">
+      <strong>Nombre:</strong> Juan Pablo Jesús Hernández Reyes <br>
+      <strong>Materia:</strong> Democracia, Ciudadanía e Identidad <br>
+      <strong>Fecha:</strong> 23 de mayo de 2026
+    </div>
+  </div>
+
+  <div class="map">
+
+    <!-- Nodo principal -->
+    <div class="node main">
+      JUSTICIA SOCIAL
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- Primer nivel -->
+    <div class="subtitle">
+      Igualdad y libertad son fundamentos de la justicia social
+    </div>
+
+    <div class="level">
+      <div class="node">
+        IGUALDAD
+      </div>
+
+      <div class="node">
+        LIBERTAD
+        <div class="small">
+          Principios fundamentales e interrelacionados
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- Segundo nivel -->
+    <div class="subtitle">
+      Tipos de justicia social
+    </div>
+
+    <div class="level">
+      <div class="node">
+        SOLIDARIDAD
+        <div class="small">
+          Basada en necesidades
+        </div>
+      </div>
+
+      <div class="node">
+        DERECHOS HUMANOS <br>
+        IGUALDAD JURÍDICA
+      </div>
+
+      <div class="node">
+        MÉRITOS
+        <div class="small">
+          Basado en contribuciones o incentivos
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- Tercer nivel -->
+    <div class="subtitle">
+      Dimensiones de la justicia social
+    </div>
+
+    <div class="level">
+      <div class="node">
+        REDISTRIBUCIÓN
+      </div>
+
+      <div class="node">
+        RECONOCIMIENTO
+      </div>
+
+      <div class="node">
+        REPRESENTACIÓN
+        <div class="small">
+          Participación ciudadana
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- Cuarto nivel -->
+    <div class="subtitle">
+      Enfoques teóricos comparados
+    </div>
+
+    <div class="level">
+
+      <div class="node">
+        <strong>JOHN RAWLS</strong>
+        <div class="small">
+          Igualdad de bienes primarios <br><br>
+          Enfoque procedimental <br><br>
+          Instituciones justas
+        </div>
+      </div>
+
+      <div class="node">
+        <strong>AMARTYA SEN</strong>
+        <div class="small">
+          Igualdad de capacidades <br><br>
+          Enfoque sustantivo <br><br>
+          Libertades reales de las personas
+        </div>
+      </div>
+
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- Quinto nivel -->
+    <div class="subtitle">
+      Problemas actuales
+    </div>
+
+    <div class="level">
+
+      <div class="node">
+        Desigualdad socioeconómica creciente
+      </div>
+
+      <div class="node">
+        Crisis económica y políticas de austeridad
+      </div>
+
+      <div class="node">
+        Retroceso de derechos sociolaborales
+      </div>
+
+      <div class="node">
+        Falta de regulación de mercados financieros
+      </div>
+
+      <div class="node">
+        Déficit democrático y baja participación ciudadana
+      </div>
+
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- Sexto nivel -->
+    <div class="subtitle">
+      Propuesta del autor
+    </div>
+
+    <div class="level">
+
+      <div class="node main">
+        REFORMISMO FUERTE
+
+        <div class="small" style="margin-top:20px;">
+          Busca fortalecer la igualdad y la libertad real
+          de las mayorías sociales para lograr una sociedad más justa.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="reference">
+    <h2>Referencias</h2>
+
+    <p>
+      Antón Morón, A. (2013). <i>Igualdad y libertad: fundamentos de la justicia social.</i>
+      Revista Internacional de Educación para la Justicia Social, 2(1), 173-194.
+    </p>
+
+    <p style="margin-top:15px;">
+      Uso de inteligencia artificial como apoyo para organizar ideas y estructurar el mapa conceptual.
+    </p>
+  </div>
+
+</body>
+</html>
